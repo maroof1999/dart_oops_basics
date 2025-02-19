@@ -1,4 +1,12 @@
-// Abstract class
+// An abstract class is a class that cannot be instantiated and is used to define the structure of the child classes.
+// Abstract classes can have abstract methods (methods without a body) that must be implemented by the child classes.
+// Abstract classes can also have concrete methods (methods with a body) that can be used by the child classes.
+// Abstract methods are created using the abstract keyword.
+// Abstract methods must be implemented by the child classes.
+// Concrete methods can be used by the child classes without any changes.
+// Example: Abstract class Vehicle with an abstract method startEngine() and a concrete method displayInfo().
+// Example: Concrete class Car extending the abstract class Vehicle and implementing the abstract method startEngine().
+
 abstract class Vehicle {
   String brand;
 
@@ -38,3 +46,4 @@ void main() {
   myCar.startEngine();  // Calling implemented abstract method
   myCar.showDoors();    // Specific method of Car class
 }
+//we follow this approach to hide the implementation details from the user and only show the necessary details.

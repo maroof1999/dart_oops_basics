@@ -1,4 +1,6 @@
-// Superclass (Parent class)
+// Superclass (Parent class) or Base class
+// Subclass (Child class) , Derive class that inherits from Vehicle
+// Inheritance is a mechanism in which a new class inherits properties and methods from an existing class.
 class Vehicle {
   String brand;
   int year;

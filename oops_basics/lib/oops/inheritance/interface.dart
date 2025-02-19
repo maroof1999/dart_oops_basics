@@ -1,3 +1,6 @@
+// An interface is a contract that defines the signature of the functionality.
+// An interface can have methods and properties, but they do not contain any implementation.
+
 // Define an interface
 abstract class Engine {
   void startEngine();

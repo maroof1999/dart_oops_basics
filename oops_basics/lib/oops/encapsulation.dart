@@ -1,4 +1,5 @@
 // Define a class with encapsulation
+// Encapsulation is the bundling of data and the methods that operate on that data into a single unit.
 class BankAccount {
   // Private fields (Encapsulation)
   String _accountHolder;

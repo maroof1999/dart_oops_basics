@@ -1,3 +1,4 @@
+// 1. Create a class BankAccount with private variable _balance of type num and initialize it to 0.
 class BankAccount {
   num? _balance = 0;
   num? getBalance() {
