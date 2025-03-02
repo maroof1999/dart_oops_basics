@@ -3,7 +3,14 @@ class BankAccount {
   num? _balance = 0;
   BankAccount({required double balance}) {
     _balance = balance;
-  }
+  }//default constructor
+  BankAccount.newClient() {
+    _balance = 0;
+  }//named constructor
+  BankAccount.vipClient(double startAmout) {
+    _balance = startAmout*1.2;
+  }//named constructor
+
   num? getBalance() {
     return _balance!;
   }
@@ -23,4 +30,16 @@ class BankAccount {
       throw ('Amount should be greater than 0 and less than balance');
     }
   }
+}
+void main(){
+  BankAccount account1 = BankAccount(balance: 1000);
+  print(account1.getBalance());
+  account1.deposit(500);
+  print(account1.getBalance());
+  account1.withdraw(200);
+  print(account1.getBalance());
+  BankAccount account2 = BankAccount.newClient();
+  print(account2.getBalance());
+  BankAccount account3 = BankAccount.vipClient(1000);
+  print(account3.getBalance());
 }
