@@ -1,16 +1,7 @@
-// void main() {
-//   var house = House(
-//       noOfWindow: 5, noOfDoors: 2, typeOfWals: 'POP', typeOfRoof: 'Breaks');
-//   house.printData();
-
-//   var house2 = House(
-//       noOfWindow: 10, noOfDoors: 4, typeOfWals: 'POP', typeOfRoof: 'Breaks');
-//   house2.printData();
-// }
 void main() {
   // Get the singleton instance
   MyHouse house1 = MyHouse();
-  
+
   // Set data
   house1.setData(
     noOfWindow: 4,
@@ -26,33 +17,11 @@ void main() {
   MyHouse house2 = MyHouse();
 
   // Print data from the second instance
-  house2.printData(); // This will print the same values as house1 since it's the same instance
+  house2
+      .printData(); // This will print the same values as house1 since it's the same instance
 
   // Verify that both instances are the same
   print(house1 == house2); // Output: true
-}
-
-
-
-class House {
-  int noOfWindow = 0;
-  int noOfDoors = 0;
-  String typeOfWals = 'Not choosen yet';
-  String typeOfRoof = 'Not choosen yet';
-
-  House({
-    required this.noOfWindow,
-    required this.noOfDoors,
-    required this.typeOfWals,
-    required this.typeOfRoof,
-  });
-  void printData() {
-    print('''
-    No of Window  = $noOfWindow
-    No of Doors = $noOfDoors
-    Type of Wals = $typeOfWals
-    Type of Roof = $typeOfRoof''');
-  }
 }
 
 class MyHouse {
@@ -95,4 +64,3 @@ class MyHouse {
     Type of Roof = $typeOfRoof''');
   }
 }
-
